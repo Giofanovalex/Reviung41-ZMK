@@ -36,7 +36,7 @@
                         bindings = <
    &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
    &trans &kp UNDER &kp PLUS    &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT SPACE
+   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp C_PLAY_PAUSE    &kp C_VOL_UP    &kp C_VOL_DN    &kp C_MUTE &kp PSCRN &mt RSHFT SPACE
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
                 };
