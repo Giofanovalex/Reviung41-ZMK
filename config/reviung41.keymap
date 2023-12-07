@@ -15,14 +15,14 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
+// |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U  |  Y  |  ;  |   BKSP    |
+// | CTRL |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E  |  I  |  O  |    '      |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  | SHFT(RET) |
 //                         | ALT | LWR | SPC | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
+   &kp LCTRL &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
                         &kp LALT  &mo 1 &kp SPACE &mo 2  &kp RGUI
                         >;
                 };
@@ -36,12 +36,12 @@
                         bindings = <
    &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
    &trans &kp UNDER &kp PLUS    &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT SPACE
+           &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  C_MUTE  C_VOL_UP C_VOL_DN &kp PSCRN &mt RSHFT SPACE
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
                 };
 
-                raise_layer {
+                raise_layer {{
 // ----------------------------------------------------------------------------
 // |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
 // |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
